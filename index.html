@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                 <h1>The abbr element</h1>
 
                 <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-                
+
                 <h1>The address element</h1>
 
                 <address>
@@ -74,6 +75,56 @@
                     USA
                 </address>
 
+                <h2>7.CSS Selectors</h2>
+                <h2>A CSS selector selects the HTML element(s) you want to style.</h2>
+                <ul>
+                    <li>Simple selectors (select elements based on name, id, class)</li>
+                    <li> Combinator selectors (select elements based on a specific relationship between them)</li>
+                    <li> Pseudo-class selectors (select elements based on a certain state)</li>
+                    <li> Pseudo-elements selectors (select and style a part of an element)</li>
+                    <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+
+                </ul>
+                <h3>Simple selectors</h3>
+                <ul>
+                    <li>Name</li>
+                    <li>id</li>
+                    <li>class</li>
+                </ul>
+                <h3>Combinator selectors</h3>
+                <ul>
+                    <li>descendant selector (space)</li>
+                    <li>child selector (>)</li>
+                    <li>adjacent sibling selector (+)</li>
+                    <li>general sibling selector (~)</li>
+
+                </ul>
+                <table style="border: solid 3px">
+                    <tr>
+                        <th>Selector</th>
+                        <th>Example </th>
+                        <th>Example description</th>
+                    </tr>
+                    <tr>
+                        <td>element element div p Selects all <p> elements inside
+                            <div> elements
+                        </td>
+                        <td>element>element div > p Selects all <p> elements where the parent is a
+                            <div> element
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>element+element div + p Selects the first <p> element that are placed immediately after
+                            <div> elements
+                        </td>
+                        <td>element1~element2 p ~ ul Selects every <ul> element that are preceded by a <p> element</td>
+                    </tr>
+                </table>
+
+
+
+
 
 
             </div>
@@ -83,4 +134,4 @@
 
 </body>
 
-</html>
+</html2
