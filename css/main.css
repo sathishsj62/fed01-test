@@ -64,3 +64,16 @@
 .Box-5 h1{
     box-shadow: inset 0 0 10px blueviolet ;
 }
+.image{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+     align-items: center;
+    
+
+}
+.image img{
+    width: 600px;
+    height:400px;
+    filter:blur(1px)
+}
