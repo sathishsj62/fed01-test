@@ -76,4 +76,16 @@
     width: 600px;
     height:400px;
     filter:blur(1px)
+    
+}
+.transition{
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    background: green;
+    transition: 1s;
+
+}
+.transition:hover{
+    width: 300px;
 }
