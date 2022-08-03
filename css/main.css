@@ -89,3 +89,16 @@
 .transition:hover{
     width: 300px;
 }
+.transition-duration{
+    width: 100px;
+  height: 100px;
+  background: red;
+  margin: 100px auto;
+  transition-duration: 5s;
+
+}
+.transition-duration:hover{
+    width: 300px;
+
+}
+
