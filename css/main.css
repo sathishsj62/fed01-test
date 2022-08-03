@@ -107,4 +107,12 @@
 ul em {
     color: brown;
 }
+p em{
+    color: blueviolet;
+} 
+em {
+    color: chocolate;
+}
+
+
 

@@ -565,38 +565,59 @@
         <input type="submit" value="Submit">
         <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
     </form>
-   <h2> HTML Input form* Attributes </h2>
-   <h3>The formaction Attribute</h3>
-   <form action="/action_page.php">
+    <h2> HTML Input form* Attributes </h2>
+    <h3>The formaction Attribute</h3>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
+    <h2> The formenctype Attribute</h2>
+    form action="/action_page_binary.asp" method="post">
     <label for="fname">First name:</label>
     <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
     <input type="submit" value="Submit">
-    <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
-  </form>
-  <h2> The formenctype Attribute</h2>
-  form action="/action_page_binary.asp" method="post">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formenctype="multipart/form-data"
-  value="Submit as Multipart/form-data">
-</form>
-<h2>The formnovalidate Attribute </h2>
-<form action="/action_page.php">
-    <label for="email">Enter your email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-    <input type="submit" formnovalidate="formnovalidate"
-    value="Submit without validation">
-  </form>
-  <h2>The novalidate Attribute</h2>
-  <form action="/action_page.php" novalidate>
-    <label for="email">Enter your email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-  </form>
+    <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    </form>
+    <h2>The formnovalidate Attribute </h2>
+    <form action="/action_page.php">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+    </form>
+    <h2>The novalidate Attribute</h2>
+    <form action="/action_page.php" novalidate>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <h1> html semantic element</h1>
+    <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+    <p>Examples of semantic elements: <em> form, table,article</em> - Clearly defines its content.</p>
+    <em>article</em> Defines independent, self-contained content <br>
+    <em>aside</em> Defines content aside from the page content <br>
+    <em>details</em> Defines additional details that the user can view or hide <br>
+    <em>figcaption</em> Defines a caption for a element<br>
+    <em>figure</em> Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. <br>
+    <em>footer</em> Defines a footer for a document or section <br>
+    <em>header</em> Specifies a header for a document or section <br>
+    <em>main</em> Specifies the main content of a document <br>
+    <em>mark</em> Defines marked/highlighted text <br>
+    <em>nav</em> Defines navigation links <br>
+    <em>section</em> Defines a section in a document <br>
+    <em>summary</em> Defines a visible heading for a <details> element <br>
+    <em>time</em> Defines a date/time <br>
+
+    <h1>The display Property</h1>
+     <h2>display:block</h2>
+     <ul></ul>
 
 
 </body>
