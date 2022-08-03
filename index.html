@@ -424,7 +424,7 @@
             <li>blur(35px)</li>
             <li> brightness(200%)</li>
             <li>contrast(200%)</li>
-            <li>drop-shadow(8px 8px 10px  gray)</li>
+            <li>drop-shadow(8px 8px 10px gray)</li>
             <li>grayscale(50%)</li>
             <li>hue-rotate(0to360deg,-2.5turn,-2.5rad) </li>
             <li>invert(100%) </li>
@@ -450,11 +450,153 @@
     <section class="transition">transition</section>
     <section class=">transition-duration">transition-duration</section>
 
+    <h2>The HTML <form> Elements</h2>
+
+    <p>The HTML
+        element can contain one or more of the following form elements:</p>
 
 
+    <ul class="aaa">
+        <li>input</li>
+        <li>label</li>
+        <li>select</li>
+        <li>textarea</li>
+        <li>button</li>
+        <li>fieldset</li>
+        <li> legend</li>
+        <li>datalist</li>
+        <li> output</li>
+        <li>option</li>
+        <li>optgroup</li>
+
+    </ul>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <h2>The Action Attribute</h2>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    <h2>The Target Attribute</h2>
+    <p>The <em> target</em> attribute specifies where to display the response that is received after submitting the
+        form.</p>
+
+    <ul>
+        <li> <em>_blank</em> The response is displayed in a new window or tab</li>
+        <li><em>_self</em> The response is displayed in the current window </li>
+        <li><em> _parent </em> The response is displayed in the parent frame</li>
+        <li> <em>_top</em> The response is displayed in the full body of the window</li>
+        <li> <em>framename</em> The response is displayed in a named iframe
+        </li>
+    </ul>
+
+    <h2>The Method Attribute</h2>
+    <p>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+    </p>
 
 
+    <ul>
+        <li>Appends the form data to the URL, in name/value pairs <br>
+            NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!) <br>
+            The length of a URL is limited (2048 characters) <br>
+            Useful for form submissions where a user wants to bookmark the result <br>
+            GET is good for non-secure data, like query strings in Google</li> <br>
+        <li>Always use POST if the form data contains sensitive or personal information! <br>
+            Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+            <br>
+            POST has no size limitations, and can be used to send large amounts of data. <br>
+            Form submissions with POST cannot be bookmarked <br>
+        </li>
+    </ul>
+    <h2>HTML Input Types</h2>
 
+    <ol>
+        <input type="button"> <br>
+        <input type="checkbox"> <br>
+        <input type="color"> <br>
+        <input type="date"> <br>
+        <input type="datetime-local"> <br>
+        <input type="email"> <br>
+        <input type="file"> <br>
+        <input type="hidden"> <br>
+        <input type="image"> <br>
+        <input type="month"> <br>
+        <input type="number"> <br>
+        <input type="password"> <br>
+        <input type="radio"> <br>
+        <input type="range"> <br>
+        <input type="reset"> <br>
+        <input type="search"> <br>
+        <input type="submit"> <br>
+        <input type="tel"> <br>
+        <input type="text"> <br>
+        <input type="time"> <br>
+        <input type="url"> <br>
+        <input type="week"> <br>
+    </ol>
+
+    <h2>HTML Input Attributes</h2>
+    <ul>
+        <li>The input <em>value attribute</em> specifies an initial value for an input field:</li>
+        <li>The input <em>readonly attribute </em> specifies that an input field is read-only.</li>
+        <li>The input <em>disabled attribute </em> specifies that an input field should be disabled.</li>
+        <li>The input <em>size attribute</em> specifies the visible width, in characters, of an input field.</li>
+        <li>The input <em>maxlength attribute </em> specifies the maximum number of characters allowed in an input
+            field.</li>
+        <li>The <em>min and max attributes</em> work with the following input types: number, range, date,
+            datetime-local, month, time and week.</li>
+    </ul>
+
+
+    <h1>The input formaction attribute</h1>
+
+    <p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
+   <h2> HTML Input form* Attributes </h2>
+   <h3>The formaction Attribute</h3>
+   <form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+  </form>
+  <h2> The formenctype Attribute</h2>
+  form action="/action_page_binary.asp" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
+<h2>The formnovalidate Attribute </h2>
+<form action="/action_page.php">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formnovalidate="formnovalidate"
+    value="Submit without validation">
+  </form>
+  <h2>The novalidate Attribute</h2>
+  <form action="/action_page.php" novalidate>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
 
 </body>
