@@ -73,6 +73,7 @@
 
 }
 .image img{
+    cursor:-webkit-grabbing;
     width: 600px;
     height:400px;
     filter:blur(1px)
@@ -151,6 +152,8 @@ em {
 .wait {cursor: wait;}
 .zoom-in {cursor: zoom-in;}
 .zoom-out {cursor: zoom-out;}
+
+/* string */
 
 
 

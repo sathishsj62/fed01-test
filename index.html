@@ -613,56 +613,88 @@
     <em>nav</em> Defines navigation links <br>
     <em>section</em> Defines a section in a document <br>
     <!-- <em>summary</em> Defines a visible heading for a <details> element <br> -->
-        <em>time</em> Defines a date/time <br>
+    <em>time</em> Defines a date/time <br>
 
-        <h1>The display Property</h1>
-        <h2>display:block</h2>
-        
+    <h1>The display Property</h1>
+    <h2>display:block</h2>
 
-        <!-- css cursors Visibility -->
-        <h1>The cursor Property</h1>
-        <p>Mouse over the words to change the mouse cursor.</p>
 
-            <p class="all-scroll">all-scroll</p>
-            <p class="auto">auto</p>
-            <p class="cell">cell</p>
-            <p class="context-menu">context-menu</p>
-            <p class="col-resize">col-resize</p>
-            <p class="copy">copy</p>
-            <p class="crosshair">crosshair</p>
-            <p class="default">default</p>
-            <p class="e-resize">e-resize</p>
-            <p class="ew-resize">ew-resize</p>
-            <p class="grab">grab</p>
-            <p class="grabbing">grabbing</p>
-            <p class="help">help</p>
-            <p class="move">move</p>
-            <p class="n-resize">n-resize</p>
-            <p class="ne-resize">ne-resize</p>
-            <p class="nesw-resize">nesw-resize</p>
-            <p class="ns-resize">ns-resize</p>
-            <p class="nw-resize">nw-resize</p>
-            <p class="nwse-resize">nwse-resize</p>
-            <p class="no-drop">no-drop</p>
-            <p class="none">none</p>
-            <p class="not-allowed">not-allowed</p>
-            <p class="pointer">pointer</p>
-            <p class="progress">progress</p>
-            <p class="row-resize">row-resize</p>
-            <p class="s-resize">s-resize</p>
-            <p class="se-resize">se-resize</p>
-            <p class="sw-resize">sw-resize</p>
-            <p class="text">text</p>
-            <p class="url">url</p>
-            <p class="w-resize">w-resize</p>
-            <p class="wait">wait</p>
-            <p class="zoom-in">zoom-in</p>
-            <p class="zoom-out">zoom-out</p>
-        </div>
+    <!-- css cursors Visibility -->
+    <h1>The cursor Property</h1>
+    <p>Mouse over the words to change the mouse cursor.</p>
+
+    <p class="all-scroll">all-scroll</p>
+    <p class="auto">auto</p>
+    <p class="cell">cell</p>
+    <p class="context-menu">context-menu</p>
+    <p class="col-resize">col-resize</p>
+    <p class="copy">copy</p>
+    <p class="crosshair">crosshair</p>
+    <p class="default">default</p>
+    <p class="e-resize">e-resize</p>
+    <p class="ew-resize">ew-resize</p>
+    <p class="grab">grab</p>
+    <p class="grabbing">grabbing</p>
+    <p class="help">help</p>
+    <p class="move">move</p>
+    <p class="n-resize">n-resize</p>
+    <p class="ne-resize">ne-resize</p>
+    <p class="nesw-resize">nesw-resize</p>
+    <p class="ns-resize">ns-resize</p>
+    <p class="nw-resize">nw-resize</p>
+    <p class="nwse-resize">nwse-resize</p>
+    <p class="no-drop">no-drop</p>
+    <p class="none">none</p>
+    <p class="not-allowed">not-allowed</p>
+    <p class="pointer">pointer</p>
+    <p class="progress">progress</p>
+    <p class="row-resize">row-resize</p>
+    <p class="s-resize">s-resize</p>
+    <p class="se-resize">se-resize</p>
+    <p class="sw-resize">sw-resize</p>
+    <p class="text">text</p>
+    <p class="url">url</p>
+    <p class="w-resize">w-resize</p>
+    <p class="wait">wait</p>
+    <p class="zoom-in">zoom-in</p>
+    <p class="zoom-out">zoom-out</p>
+    </div>
+
+    <h2>date convert</h2>
+
+  <h3>  const date = new Date("2020-05-12T23:50:21.817Z"); </h3>
+     
+    date.toString() // Tue May 12 2020 18:50:21 GMT-0500 (Central Daylight Time) <br>
+    date.toDateString() // Tue May 12 2020 <br>
+    date.toTimeString() // 18:50:21 GMT-0500 (Central Daylight Time) <br>
+    date.toISOString() // 2020-05-12T23:50:21.817Z <br>
+    date.toUTCString() // Tue, 12 May 2020 23:50:21 GMT <br>
+    date.toGMTString() // Tue, 12 May 2020 23:50:21 GMT <br>
+    date.toJSON() // 2020-05-12T23:50:21.817Z <br>
+    date.toLocaleString() // 5/12/2020, 6:50:21 PM <br>
+    date.toLocaleDateString() // 5/12/2020 <br>
+    date.toLocaleTimeString() // 6:50:21 PM <br>
+
+    <!-- string -->
+    <h2>STRING Method</h2>
+
+<h3> 5.The replace() method replaces a specified value with another value in a string:</h3>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft!</p>
 
 
 
 
 </body>
+<script>
+    function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML =
+  text.replace("Microsoft","W3Schools");
+}
+</script>
 
 </html>
